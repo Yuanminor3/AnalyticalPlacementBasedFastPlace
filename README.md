@@ -3,9 +3,11 @@ Name: Yuan Jiang
 ID: 5659433
 
 Project Description:
+
     The project implements an analytic placement algorithm to partially solve the placement problem based on the FastPlace paper. It improves on traditional quadratic placement methods by reducing cell overlap and wirelength through three main strategies: Cell Shifting for efficient cell distribution, Iterative Local Refinement for optimizing wirelength, and a Hybrid Net Model to enhance solver speed by reducing non-zero entries in the connectivity matrix. The program will be given some large circuit files as a problem. After running it, all outputs will be store in txt files with width length and plot cells/IOPins placement in jpg file for before/after spreading. It also allows user to use GUI to plot by themselves to check the results.
 
 Project results:
+
     Can't read ibm10 and ibm16 successfully.
     I checked my before spreading files of both of toy files, the Q matrix, Q size, dx, dy, x/y coordinates, WL and cell placement.jpg are all the same as Prof. Kia's result in forum. So I am pretty sure everything about Phase 1, Conjugate Gradient method and WL calculation algorithm are correct.
     For after spreading part in phase 2, I strictly followed paper's spreading algorithm and have checked carefully my funtion and implementations, the spreading results are reasonable.
@@ -23,6 +25,7 @@ How to run:
     2. "python3 GUI.py" which will create a GUI window to select *.txt file to get plot of it in '/parser/output/GUIplot.jpg'
 
 Comments:
+
     1. "AllWL.txt" contains all wirelength value for each benchmark before and after spreading
     2. "(GUI)AllOutputs" directory contains all benchmarks' coordinates files(.txt) and cell placement file(.jpg) before and after spreading.
     3. "(GUI)AllOutputs" directory is used for GUI.py in "parser" directory
